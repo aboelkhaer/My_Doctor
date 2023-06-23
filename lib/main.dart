@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:my_doctor/core/constants/app_routes.dart';
+import 'core/constants/app_routes.dart';
+
 
 void main() {
   runApp(const MyApp());

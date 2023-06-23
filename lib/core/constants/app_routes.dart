@@ -1,10 +1,12 @@
 import 'package:get/get.dart';
-import 'package:my_doctor/core/bindings/home_binding.dart';
-import 'package:my_doctor/core/bindings/sign_in_binding.dart';
-import 'package:my_doctor/core/bindings/sign_up_binding.dart';
-import 'package:my_doctor/view/home_screen/home_screen.dart';
-import 'package:my_doctor/view/sign_in_screen/sign_in_screen.dart';
-import 'package:my_doctor/view/sign_up_screen/sign_up_controller.dart';
+
+import '../../view/home_screen/home_screen.dart';
+import '../../view/sign_in_screen/sign_in_screen.dart';
+import '../../view/sign_up_screen/sign_up_controller.dart';
+import '../bindings/home_binding.dart';
+import '../bindings/sign_in_binding.dart';
+import '../bindings/sign_up_binding.dart';
+
 
 class AppRoutes {
   static const String _homeScreen = '/home';
@@ -22,11 +24,11 @@ class AppRoutes {
         name: _homeScreen,
         binding: HomeBinding()),
     GetPage(
-        page: () => const SignInScreen(),
+        page: () =>  SignInScreen(),
         name: _signInScreen,
         binding: SignInBinding()),
     GetPage(
-        page: () => const SignUpScreen(),
+        page: () =>  SignUpScreen(),
         name: _signUpScreen,
         binding: SignUpBinding()),
   ];
